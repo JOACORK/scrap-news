@@ -1,11 +1,21 @@
-from webdriver_manager.chrome import ChromeDriverManager
+"""from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 # import pandas as pd 
 import requests
+"""
+# Instalar automaticamente chromedriver
+# Driver Selenium
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
-from logic.tools import iniciar_chrome, WebDriverWait, EC,By
+# Para esperar
+from selenium.webdriver.support.ui import WebDriverWait
+
+# para esperar que aparezca un elemento
+from selenium.webdriver.support import expected_conditions as EC
+from logic.tools import iniciar_chrome
 
 
 
